@@ -71,7 +71,7 @@ nav {
   width: 12rem;
   border-radius: 90px;
   margin-left: 2rem;
-  box-shadow: 0.5rem 0.5rem 0.9rem rgb(92, 92, 92);
+  box-shadow:8px 8px 12px rgb(92, 92, 92);
 }
 
 .main_text {
@@ -105,10 +105,11 @@ nav {
   margin: 3rem 0 0.5rem;
   width: 35.5rem;
   border-radius: 15px;
-  box-shadow: 0.5rem 0.5rem 0.9rem rgb(92, 92, 92);
+  box-shadow: 8px 8px 12px rgb(92, 92, 92);
 }
 
 .About_me_text {
+  margin-top: 1.2rem;
   font-size: 0.9rem;
   text-align: center;
   font-family: "Encode Sans", sans-serif;
@@ -173,7 +174,7 @@ nav {
   height: 7rem;
   object-fit: cover;
   border-radius: 5%;
-  box-shadow: 0.5rem 0.5rem 0.9rem rgb(92, 92, 92);
+  box-shadow: 8px 8px 12px rgb(92, 92, 92);
 }
 
 .야구장사진,
