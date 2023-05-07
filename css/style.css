@@ -1,0 +1,349 @@
+* {
+  background: #cde5ff;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#top_menu {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.logo_image {
+  width: 2.9rem;
+  padding: 1rem;
+}
+
+.homepage_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 7rem;
+  margin: 0;
+}
+
+.homepage_menu li {
+  float: left;
+  padding: 0.9rem 1.2rem;
+  color: black;
+  line-height: 120%;
+}
+
+.homepage_menu li:hover {
+  color: #f7d400;
+}
+
+/* main_page */
+
+.main_page {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  opacity: 0;
+  transition: all 1.8s;
+}
+
+.main_image {
+  width: 12rem;
+  border-radius: 90px;
+  margin-left: 2rem;
+  box-shadow: 8px 8px 12px rgb(92, 92, 92);
+}
+
+.main_text {
+  margin-top: 1.9rem;
+  font-size: 1.8rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  line-height: 180%;
+}
+
+.main_text_name {
+  font-size: 2.8rem;
+  color: #f7d400;
+}
+
+.About_me {
+  margin: 10rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.About_me_title {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+
+.About_me_image {
+  margin: 3rem 0 0.5rem;
+  width: 35.5rem;
+  border-radius: 15px;
+  box-shadow: 8px 8px 12px rgb(92, 92, 92);
+}
+
+.About_me_text {
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: "Encode Sans", sans-serif;
+  line-height: 170%;
+  white-space: pre;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+/* Skills */
+
+.Skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Skills_text {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Skills_image_wrap {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Skills_images {
+  margin: 0 2rem;
+  width: 5rem;
+  height: auto;
+}
+
+.Favorite_text {
+  margin: 15rem 0 4rem;
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Favorite_image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40rem;
+  text-align: center;
+  margin: 0 5rem;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Favorite_image img {
+  margin: 0.7rem 0.5rem;
+  width: 10rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 8px 8px 12px rgb(92, 92, 92);
+}
+
+.야구장사진,
+.불닭사진,
+.노포사진,
+.해리포터사진,
+.캠핑사진,
+.피아노사진,
+.예쁜카페사진,
+.여행사진,
+.요리사진 {
+  position: relative;
+  width: 11rem;
+}
+
+.야구장사진 img,
+.불닭사진 img,
+.노포사진 img,
+.해리포터사진 img,
+.캠핑사진 img,
+.피아노사진 img,
+.예쁜카페사진 img,
+.여행사진 img,
+.요리사진 img {
+  transition: all 0.25s linear;
+}
+
+.야구장사진:hover img,
+.불닭사진:hover img,
+.노포사진:hover img,
+.해리포터사진:hover img,
+.캠핑사진:hover img,
+.피아노사진:hover img,
+.예쁜카페사진:hover img,
+.여행사진:hover img,
+.요리사진:hover img {
+  opacity: 0.2;
+  transform: scale(1.25);
+}
+
+.야구장사진 .inner-content,
+.불닭사진 .inner-content,
+.노포사진 .inner-content,
+.해리포터사진 .inner-content,
+.캠핑사진 .inner-content,
+.피아노사진 .inner-content,
+.예쁜카페사진 .inner-content,
+.여행사진 .inner-content,
+.요리사진 .inner-content {
+  width: 80%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transition: all 600ms ease;
+  color: rgb(46, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.야구장사진:hover .inner-content,
+.불닭사진:hover .inner-content,
+.노포사진:hover .inner-content,
+.해리포터사진:hover .inner-content,
+.캠핑사진:hover .inner-content,
+.피아노사진:hover .inner-content,
+.예쁜카페사진:hover .inner-content,
+.여행사진:hover .inner-content,
+.요리사진:hover .inner-content {
+  opacity: 1;
+  top: 50%;
+}
+
+.야구장사진 .inner-content .overview,
+.불닭사진 .inner-content .overview,
+.노포사진 .inner-content .overview,
+.해리포터사진 .inner-content .overview,
+.캠핑사진 .inner-content .overview,
+.피아노사진 .inner-content .overview,
+.예쁜카페사진 .inner-content .overview,
+.여행사진 .inner-content .overview,
+.요리사진 .inner-content .overview {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.야구장사진 .inner-content .title,
+.불닭사진 .inner-content .title,
+.노포사진 .inner-content .title,
+.해리포터사진 .inner-content .title,
+.캠핑사진 .inner-content .title,
+.피아노사진 .inner-content .title,
+.예쁜카페사진 .inner-content .title,
+.여행사진 .inner-content .title,
+.요리사진 .inner-content .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.야구장사진 .inner-content hr,
+.불닭사진 .inner-content hr,
+.노포사진 .inner-content hr,
+.해리포터사진 .inner-content hr,
+.캠핑사진 .inner-content hr,
+.피아노사진 .inner-content hr,
+.예쁜카페사진 .inner-content hr,
+.여행사진 .inner-content hr,
+.요리사진 .inner-content hr {
+  border-top: 1px solid #f1f1f1;
+  width: 100%;
+}
+
+.Guess_me_text {
+  margin: 13rem 0 4rem;
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Guess_me_quiz {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Guess_me_quiz li {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.Guess_me_quiz a:hover {
+  color: #004ac0;
+  transform: scale(1.1);
+}
+
+.Guess_me_quiz a {
+  width: 20%;
+}
+
+.Contect_text {
+  margin: 13rem 0 4rem;
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.instagram_icon {
+  transform: scale(1.25);
+}
+
+.Contect_icon {
+  display: flex;
+  margin: 0 13rem 10rem 13rem;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.Contect_icon img {
+  width: 3rem;
+}
