@@ -308,6 +308,7 @@ nav {
   text-align: center;
   opacity: 0;
   transition: all 1.5s;
+  align-items: center;
 }
 
 .Guess_me_quiz li {
@@ -322,6 +323,7 @@ nav {
 
 .Guess_me_quiz a {
   width: 20%;
+  margin-bottom: 1rem;
 }
 
 .Contect_text {
