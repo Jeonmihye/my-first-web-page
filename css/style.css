@@ -326,7 +326,7 @@ nav {
   margin-bottom: 1rem;
 }
 
-.Contect_text {
+.Contact_text {
   margin: 13rem 0 4rem;
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
@@ -339,7 +339,7 @@ nav {
   transform: scale(1.25);
 }
 
-.Contect_icon {
+.Contact_icon {
   display: flex;
   margin: 0 13rem 10rem 13rem;
   justify-content: space-between;
@@ -347,6 +347,6 @@ nav {
   transition: all 1.5s;
 }
 
-.Contect_icon img {
+.Contact_icon img {
   width: 3rem;
 }
